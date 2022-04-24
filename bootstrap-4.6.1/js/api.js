@@ -12,16 +12,19 @@
                 else{
                     output += "<br><input type=checkbox>"+response[i].title+"</input></br><hr>";
                 }
+
+                
+
             }
+
             document.getElementById("checklist").innerHTML=output;
+            
+           
         }
 
     
     }
     xhttp.open("GET","https://jsonplaceholder.typicode.com/todos",true);
     xhttp.send();
-var checklist = document.getElementById("checklist")  
-function missionup(){
-   
-}
-checklist.addEventListener("onchange",missionup);
+
+    
